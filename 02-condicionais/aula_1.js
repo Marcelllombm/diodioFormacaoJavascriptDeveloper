@@ -1,7 +1,5 @@
-// boolean conceito so tem duas possibilidade
+const  number = 10;
 
-let ceuAzul = true;
-console.log(ceuAzul)
+const evenNumber = (number % 2) === 0;
 
-let ceuVermelho = false;
-console.log(ceuVermelho);
+console.log(evenNumber)
