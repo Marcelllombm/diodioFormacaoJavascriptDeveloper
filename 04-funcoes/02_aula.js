@@ -19,13 +19,11 @@ function classifyImc(imc){
         }
 }
 
-
-function main(){
+// function anonima main
+(function(){
     const Weight = 69.5;
     const height = 1.67;
     
     const imc = calculateImc(Weight, height)
     console.log(classifyImc(imc))
-}
-
-main()
+})();
