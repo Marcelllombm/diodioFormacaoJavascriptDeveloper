@@ -1,11 +1,15 @@
 // desafio maior de idade
 
+function myName(name){
+    return name
+}
 function ofLegalAge(age){
-    if(age > 18){
-        return "vocë e maior de idade"
+    if(age >= 18){
+        console.log(myName('Lucas') + "vocë e maior de idade")
     } else {
-    return "vocë e menor de idade"
-    }
+    console.log( "vocë e menor de idade") 
+   }
+    
 }
 
-console.log(ofLegalAge(17))
+ofLegalAge(19)
