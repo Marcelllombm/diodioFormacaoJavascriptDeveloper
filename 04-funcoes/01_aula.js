@@ -11,3 +11,16 @@ function increaseFees(price, percenturalInteret  ){
 console.log(increaseFees(1000, 10))
 console.log(increaseFees(700, 10))
  
+//criar o função principal e as outras função dentro dela
+
+
+function anotherFunction(){
+    console.log('outra funcao')
+}
+
+function main(){
+    console.log('principal')
+    anotherFunction();
+}
+
+main()
