@@ -9,6 +9,14 @@ const marcelo ={
     }
 }
 
+// acesso dinâmico
+const atributo = 'nome'
+marcelo[atributo] = 'teste';
+// ou
+marcelo['nome'] =  'teste'
+
+//acesso direto
+marcelo.nome=  'teste'
 // vc pode add valor no objeto
 marcelo.altura = 1.68;
 
