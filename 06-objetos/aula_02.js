@@ -2,6 +2,14 @@
 class Pessoa {
     nome;
     idade;
+    anoDeNascimento;
+
+ // força a ser obrigatorio  (contrato)
+constructor(nome , idade){
+    this.nome = nome;
+    this.idade = idade;
+    this.anoDeNascimento = 2024 - idade;
+}
 
     descrever(){
         console.log(`meu nome é ${this.nome} e minha idade é ${this.idade}`)        
@@ -9,14 +17,9 @@ class Pessoa {
 }
 
 // instância é um ocorrencia de  um pessoa
-const marcelo = new Pessoa()
-marcelo.nome = 'marcelo borges'
-marcelo.idade = 39
-marcelo.descrever()
+const marcelo = new Pessoa('Marcelo', 39)
 
+const renam = new Pessoa('renam', 22)
 
-const renam = new Pessoa()
-renam.nome = 'renan borges'
-renam.idade = 20
-renam.descrever()
-
+console.log(marcelo)
+console.log(renam)
