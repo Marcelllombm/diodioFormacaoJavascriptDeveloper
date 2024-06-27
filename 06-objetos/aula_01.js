@@ -1,7 +1,12 @@
-// objeto é uma coleção de dados , tem chave: e valor
+// objeto é uma coleção de dados dinâmico , que tem chave: e valor
 const marcelo ={
     nome: 'Marcelo Borges de melo',
-    idade: 40
+    sobreNome:'borges',
+    idade: 40,
+    // funsao dentro do objeto e chamado de metado
+    descrever: function(){
+        console.log(`Meu nome é ${this.sobreNome} e minha idade é ${this.idade}`)
+    }
 }
 
 // vc pode add valor no objeto
@@ -13,3 +18,5 @@ delete marcelo.nome;
 console.log(marcelo.nome)
 console.log(marcelo.idade)
 console.log(marcelo)
+marcelo.descrever();
+
