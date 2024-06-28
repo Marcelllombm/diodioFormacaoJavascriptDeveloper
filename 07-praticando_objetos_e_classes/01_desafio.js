@@ -1,7 +1,7 @@
 /*
     1- crie umna classe par representar carros.
     os carros possuem um marca, um cor e um gasto média de conbustivel por kilometor rodado.
-    crie um método que dado a quantidade de quilometros e o pre;o  do combustível nos dë o valor 
+    crie um método que dado a quantidade de quilometros e o preco  do combustível nos dë o valor 
     gasto em reis para realizaer este percurso.
 
 */
