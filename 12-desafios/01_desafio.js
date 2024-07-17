@@ -1,19 +1,21 @@
 /*
-    1- faça um programa que receba a média de um aluno
-    caso a média seja < 5 imprima reprovado
-    caso a média seja  >= 5 < 7 imprima recuperação
-    caso a média seja >= 7 imprima aprovados
+    Faça um programa que receba a media de um aluno.
+    caso a média seja < 5 imprima "reprovado"
+    caso a média seja >= 5 imprima "recuperação"
+    caso a média seja >= 7 imrima "Aprovado"
 */
-const {media} = require("./funcoes")
-const notas = [5,10,5,1]
 
+const notas = [5,5,5,5]
+let soma = 0;
+for(i = 0; i < notas.length; i++){
+    soma = soma + notas[i]
+}
 
-const mediaTotal = media(notas)
-
-if( mediaTotal >= 7){
+const media = soma / notas.length;
+if(media >= 7){
     console.log("Aprovado")
-}else if( mediaTotal < 7 && mediaTotal >= 5 ){
-    console.log("Reculperação")
+}else if(media >= 5){
+    console.log("recuperação")
 } else{
     console.log("reprovado")
 }

@@ -26,5 +26,17 @@ function numeroMenorImpar(numbers){
     return Math.min.apply(null, arrayImpar)
 }
 
-
-module.exports = {media, numeroMaiorPar, numeroMenorImpar}
+function valorImposto (salario){
+    if(salario <= 1100){
+        return (salario  * 5) / 100;
+    }else if(salario > 1100 && salario <= 2500){
+        return (salario  * 10) / 100;
+    } else {
+        return (salario  * 15) / 100; 
+    }
+}
+function valorComDesconto (salario, adicional ){
+    return salario + adicional - valorImposto(salario)
+     
+}
+module.exports = {media, numeroMaiorPar, numeroMenorImpar, valorImposto, valorComDesconto }
