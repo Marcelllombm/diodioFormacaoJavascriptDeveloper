@@ -1,5 +1,6 @@
 *{
     font-family: 'Roboto', sens-serif;
+    box-sizing: border-box;
 }
 
 .content{
@@ -7,9 +8,6 @@
 
 }
 
-.content h1 {
-    margin:0;
-}
 
 ol.pokedex {
     display: grid;
@@ -20,10 +18,17 @@ ol.pokedex {
 }
 
 ol.pokedex li {
-    margin: 0.5rem;
-    padding: 2rem 1rem;
+    display: flex;
+    flex-direction: column;
+    margin: .5rem;
+    padding: 1rem;
     background-color: #14a06f;
     color:white;
     border-radius: 1rem;
-    height: 120px;
+}
+
+ol.pokedex li img{
+    max-width: 100%;
+    height: 100px;
+    align-self: flex-end;
 }
