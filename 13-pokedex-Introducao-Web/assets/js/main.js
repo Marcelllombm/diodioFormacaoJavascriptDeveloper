@@ -1,1 +1,0 @@
-alert("pagina do pokedex")
